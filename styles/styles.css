@@ -1,0 +1,138 @@
+/* work sans font downloaded */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-primary {
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* headr styles */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+    gap: 15px;
+
+}
+
+nav li {
+    list-style: none;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+.banner img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.banner-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* teams style */
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-title{
+    font-size: 2.4rem;
+    color: black;
+    font-weight: 800;
+}
+
+.teams-title .quick-list {
+    color: #727272;
+    font-weight: 500px;
+    font-size: 2.4rem;
+}
+
+.teams-title .text-feature {
+    color: #FF900E;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+/* @media queries for responsiveness for mobile */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+/* @media queries for responsiveness for tablet */
+@media screen and (min-width: 576px) and (max-width: 992ppx) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
