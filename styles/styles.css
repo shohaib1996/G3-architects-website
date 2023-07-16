@@ -85,20 +85,40 @@ nav li a {
 }
 
 /* teams style */
+main {
+    margin: 70px 200px;
+}
+
 .teams-container {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.teams-img-container img {
+    width: 200px;
+    height: 200px;
 }
 
 .teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    width: 50%;
+    margin-left: 100px;
 }
-.teams-title{
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.teams-title {
     font-size: 2.4rem;
     color: black;
     font-weight: 800;
+    margin-bottom: 25px;
 }
 
 .teams-title .quick-list {
@@ -113,26 +133,187 @@ nav li a {
     font-weight: 700;
 }
 
-/* @media queries for responsiveness for mobile */
-@media screen and (max-width: 576px) {
-    header {
-        padding: 20px;
-    }
+.teams-description {
+    color: #727272;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
 
-    nav {
-        flex-direction: column;
-        gap: 20px;
-    }
+/* feature styles */
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 50px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 50px;
+    width: 450px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 150px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+}
+
+
+/* facts style */
+.facts {
+    margin-top: 150px;
+}
+
+.facts-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 25px;
+}
+
+.facts-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 100px;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 15px;
+}
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.facts-card-container .card-title {
+    font-size: 1.25rem;
+    color: #727272;
+    font-weight: 600;
+}
+
+/* sponors style */
+.sponsors {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.sponsors-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
 
 }
 
-/* @media queries for responsiveness for tablet */
-@media screen and (min-width: 576px) and (max-width: 992ppx) {
-    header {
-        padding: 10px;
-    }
+.sponsors-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    max-width: 542px;
+    margin: 50px auto;
+}
 
-    nav {
+.sponsors-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+/* footer styles */
+footer {
+    border-radius: 8px;
+    background: #88275c;
+    margin: 0px 240px;
+}
+
+.footer-desc {
+    padding:40px 150px; 
+    text-align: center;
+    margin-bottom: 100px;
+    color: #FFF;
+}
+
+/* @media queries for responsiveness for mobile */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 10px;
+        
+    }
+    nav{
         flex-direction: column;
     }
+    .banner-title{
+        font-size: 30px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .teams-container{
+        flex-direction: column;
+        
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+          
+        margin: 0px; 
+    }
+    main{
+        padding: 0px;
+        margin: 0px;
+    }
+    .features, .facts-card-container, .sponsors-img-container{
+       
+        flex-direction: column;
+    }
+    .feature-img img{
+        width: 280px;
+        height: 300px;
+    }
+    footer{
+        width: 100%;
+        margin: 0px;
+    }
+    .footer-desc{
+        padding: 20px;
+        margin-top: 20px;
+    }
+}
+    
+
+
+/* @media queries for responsiveness for tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+   
 }
